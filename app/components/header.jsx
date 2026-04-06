@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <div>
+    <div id="home">
       <h2>Welcome! My name is</h2>
       <div className="typewriter-wrapper">
         <h1 className="typewriter">AARNA PATEL</h1>
