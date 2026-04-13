@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Header from "./components/header";
 import ProjectCards from "./components/project-cards";
+import ContactForm from "./components/contact-form";
 
 export default function Home() {
   return (
@@ -43,12 +44,16 @@ export default function Home() {
       <br></br>
       <br></br>
       
-      <div className="info-card" id="contact">
-        <div className="info-card-text">
+      <div className="info-card contact-card" id="contact">
+        <div className="info-card-text contact-card-text">
+          <h2>SHOOT ME AN EMAIL!</h2>
+          <a href="mailto:aarnapatel18@gmail.com" className="button contactbutton">Send Email</a>
           <h2>OR SEND ME A MESSAGE!</h2>
-          <p>Info here</p>
+          {/* <ContactForm /> */}
         </div>
       </div>
+
+      
       <br></br>
       <br></br>
       <br></br>
