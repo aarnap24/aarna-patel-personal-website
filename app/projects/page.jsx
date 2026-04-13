@@ -10,6 +10,7 @@ const Projects = () => {
         </ul>
       </div>
       <h1>PROJECTS</h1>
+      <h2>Click a tab to learn more!</h2>
 
       <ProjectCards />
     </div>

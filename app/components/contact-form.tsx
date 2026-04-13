@@ -9,7 +9,7 @@ export default function ContactForm() {
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    await fetch("https://formspree.io/f/yourcode", {
+    await fetch("https://formspree.io/f/xzdypqla", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name, message }),

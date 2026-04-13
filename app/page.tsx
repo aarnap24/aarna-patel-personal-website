@@ -46,10 +46,14 @@ export default function Home() {
       
       <div className="info-card contact-card" id="contact">
         <div className="info-card-text contact-card-text">
+          <br></br>
           <h2>SHOOT ME AN EMAIL!</h2>
+          <br></br>
           <a href="mailto:aarnapatel18@gmail.com" className="button contactbutton">Send Email</a>
+          <br></br>
+          <br></br>
           <h2>OR SEND ME A MESSAGE!</h2>
-          {/* <ContactForm /> */}
+          <ContactForm />
         </div>
       </div>
 
