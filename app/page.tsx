@@ -54,6 +54,7 @@ export default function Home() {
           <br></br>
           <h2>OR SEND ME A MESSAGE!</h2>
           <ContactForm />
+          <br></br>
         </div>
       </div>
 
