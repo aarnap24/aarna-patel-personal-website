@@ -4,6 +4,7 @@ import { useState } from "react";
 
 export default function ContactForm() {
   const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [submitted, setSubmitted] = useState(false);
 
@@ -12,7 +13,7 @@ export default function ContactForm() {
     await fetch("https://formspree.io/f/xzdypqla", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ name, message }),
+      body: JSON.stringify({ name, email, message }),
     });
     setSubmitted(true);
   }
@@ -32,6 +33,17 @@ export default function ContactForm() {
             placeholder="Your name"
             value={name}
             onChange={(e) => setName(e.target.value)}
+            required
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="email">Email</label>
+          <input
+            id="email"
+            type="text"
+            placeholder="Your email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             required
           />
         </div>
