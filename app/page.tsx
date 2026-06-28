@@ -31,7 +31,7 @@ export default function Home() {
             my skills in CS and design. Happy exploring!
           </p>
         </div>
-        <img src="mepic.jpg" alt="A picture of me" width="400"/>
+        <img src="mepicnew.jpg" alt="A picture of me" width="400"/>
       </div>
 
       <br></br>
